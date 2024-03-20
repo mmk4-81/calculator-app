@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Calculator.css";
 
 const Calculator = () => {
-  let [result , setResult ] = useState("");
+  let [result , setResult ] = useState('');
 
   const clickHandler = (e) => {
     let input = e.target.innerText;
@@ -16,6 +16,10 @@ const Calculator = () => {
 
   const backSpaceBtn = ()=>{
     setResult(result.slice(0,-1));
+  }
+
+  const equalBtn = ()=>{
+    setResult(String(eval(result)));
   }
 
   return (
@@ -39,7 +43,7 @@ const Calculator = () => {
         <button onClick={clickHandler} className="color">+</button>
         <button onClick={clickHandler}>0</button>
         <button onClick={clickHandler}>.</button>
-        <button className="color twocol">=</button>
+        <button onClick={equalBtn} className="color twocol">=</button>
       </div>
     </div>
   );
