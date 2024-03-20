@@ -4,8 +4,14 @@ import "./Calculator.css";
 const Calculator = () => {
   let [result , setResult ] = useState('');
 
+  const checkInput = (Text)=>{
+    if(Text === '÷') return '/';
+    if(Text === '×') return '*';
+    return Text;
+  }
+
   const clickHandler = (e) => {
-    let input = e.target.innerText;
+    let input = checkInput(e.target.innerText);
     if(input === '.' && result.includes('.')) return;
     setResult(result + input);
   };
