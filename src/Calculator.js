@@ -14,12 +14,16 @@ const Calculator = () => {
     setResult("");
   }
 
+  const backSpaceBtn = ()=>{
+    setResult(result.slice(0,-1));
+  }
+
   return (
     <div className="container">
       <div className="screen">{result}</div>
       <div className="buttons">
         <button onClick={clearBtn} className="color twocol">Clear</button>
-        <button className="color">C</button>
+        <button onClick={backSpaceBtn} className="color">C</button>
         <button onClick={clickHandler} className="color">÷</button>
         <button onClick={clickHandler}>7</button>
         <button onClick={clickHandler}>8</button>
