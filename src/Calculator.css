@@ -18,7 +18,7 @@
     flex-wrap: wrap;
 }
 
-.buttons button{
+button{
     width: 100px;
     height: 80px;
     border: none;
@@ -28,4 +28,13 @@
     cursor: pointer;
     font-size: 25px;
     border: 1px solid rgb(92,92,92);
+}
+
+.color{
+    background: #56cbdb;
+    color: #262834;
+    font-weight: bold;
+}
+.twocol{
+    width: 200px;
 }
