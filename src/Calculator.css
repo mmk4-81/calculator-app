@@ -12,3 +12,20 @@
     background: #262834;
     color: white;
 }
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttons button{
+    width: 100px;
+    height: 80px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #262834;
+    cursor: pointer;
+    font-size: 25px;
+    border: 1px solid rgb(92,92,92);
+}
