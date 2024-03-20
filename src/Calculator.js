@@ -5,7 +5,9 @@ const Calculator = () => {
   let [result , setResult ] = useState("");
 
   const clickHandler = (e) => {
-     setResult(e.target.innerText);
+    let input = e.target.innerText;
+    if(input === '.' && result.includes('.')) return;
+    setResult(result + input);
   };
   return (
     <div className="container">
