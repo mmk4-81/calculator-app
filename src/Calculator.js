@@ -3,6 +3,8 @@ import "./Calculator.css";
 
 const Calculator = () => {
   let [result , setResult ] = useState('');
+  let [hasDot,setHasDot] = useState(false);
+  let operator = ['-','+','*','/'];
 
   const checkInput = (Text)=>{
     if(Text === '÷') return '/';
@@ -12,7 +14,14 @@ const Calculator = () => {
 
   const clickHandler = (e) => {
     let input = checkInput(e.target.innerText);
-    if(input === '.' && result.includes('.')) return;
+    if(input === '.')
+      if(hasDot === true) return;
+    else
+      setHasDot(true);
+
+
+    if(operator.includes(input))
+      setHasDot(false);
     setResult(result + input);
   };
 
@@ -26,6 +35,7 @@ const Calculator = () => {
 
   const equalBtn = ()=>{
     setResult(String(eval(result)));
+    setHasDot(false);
   }
 
   return (
