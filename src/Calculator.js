@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Calculator.css";
-
+import { evaluate } from "mathjs";
 const Calculator = () => {
   let [result , setResult ] = useState('');
   let [hasDot,setHasDot] = useState(false);
@@ -37,7 +37,7 @@ const Calculator = () => {
   }
 
   const equalBtn = ()=>{
-    setResult(String(eval(result)));
+    setResult(String(evaluate(result)));
     setHasDot(false);
   }
 
