@@ -27,9 +27,12 @@ const Calculator = () => {
 
   const clearBtn = ()=>{
     setResult("");
+    setHasDot(false);
   }
 
   const backSpaceBtn = ()=>{
+    if(result.endsWith('.'))
+      setHasDot(false);
     setResult(result.slice(0,-1));
   }
 
