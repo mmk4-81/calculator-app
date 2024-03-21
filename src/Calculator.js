@@ -38,7 +38,8 @@ const Calculator = () => {
 
   const equalBtn = ()=>{
     setResult(String(evaluate(result)));
-    setHasDot(false);
+    if(result.includes('.'))setHasDot(true);
+    else setHasDot(false);
   }
 
   return (
