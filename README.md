@@ -1,14 +1,15 @@
-# ماشین حساب با React (تم دارک)
+# React Calculator (Dark Theme)
 
-این یک ماشین حساب ساده است که با استفاده از React ساخته شده و دارای تم دارک است. این پروژه برای تمرین و یادگیری React طراحی شده و شامل قابلیت‌های اساسی یک ماشین حساب معمولی می‌باشد.
+A simple calculator built with React featuring a dark theme.
+This project was created as a practice exercise to learn React fundamentals and implement a clean, responsive user interface.
 
-## ویژگی‌ها
-✅ تم دارک برای ظاهری جذاب  
-✅ عملیات پایه‌ای ریاضی شامل جمع، تفریق، ضرب و تقسیم  
-✅ رابط کاربری واکنش‌گرا (Responsive UI)  
-✅ استفاده از هوک‌های React برای مدیریت وضعیت  
-✅ کدنویسی تمیز و ساختارمند
+##🚀 Features
 
+✅ Dark theme for a modern and attractive look
+✅ Basic mathematical operations: addition, subtraction, multiplication, division
+✅ Responsive UI for desktop and mobile
+✅ Uses React hooks for state management
+✅ Clean and structured code for easy readability
 
 - demo pic
 ---
