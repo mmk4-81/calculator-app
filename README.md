@@ -6,10 +6,15 @@ This project was created as a practice exercise to learn React fundamentals and 
 ##🚀 Features
 
 ✅ Dark theme for a modern and attractive look
+
 ✅ Basic mathematical operations: addition, subtraction, multiplication, division
+
 ✅ Responsive UI for desktop and mobile
+
 ✅ Uses React hooks for state management
+
 ✅ Clean and structured code for easy readability
+
 
 - demo pic
 ---
